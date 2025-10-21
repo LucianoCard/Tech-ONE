@@ -19,7 +19,6 @@ export function Home() {
           </li>
         </ul>
       </header>
-      <body></body>
     </div>
   );
 }
