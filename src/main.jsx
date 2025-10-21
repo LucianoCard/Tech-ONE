@@ -5,9 +5,10 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./Components/Home.jsx";
+
 const router = createBrowserRouter([
   {
-    path: "/Home",
+    path: "/",
     element: <Home />,
   },
 ]);
