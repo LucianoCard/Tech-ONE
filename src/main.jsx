@@ -11,6 +11,10 @@ import { SobreNosotros } from "./Components/Paginas/SobreNosotros.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <App />,
+  },
+  {
+    path: "/Home",
     element: <Home />,
   },
   {
