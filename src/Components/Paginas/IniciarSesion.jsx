@@ -4,8 +4,14 @@ import "./IniciarSesion.css";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useState } from "react";
 
 export function IniciarSesion() {
+  const [usuario, setUsuario] = useState("");
+  const [contraseña, setContraseña] = useState("");
+  const handleSubmit = (evento) => {
+    evento.preventDefault();
+  };
   return (
     <>
       <Header />
@@ -15,10 +21,15 @@ export function IniciarSesion() {
           <h2 className="text-center tech-one">Iniciar Sesión</h2>
           <p className="text-center mb-4">Autentícate para continuar</p>
 
-          <Form>
+          <Form onSubmit={handleSubmit}>  
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label> Usuario:</Form.Label>
-              <Form.Control type="text" placeholder="Introduce tu usuario" />
+              <Form.Control
+                type="text"
+                placeholder="Introduce tu usuario"
+                value={usuario}
+                onChange={(evento) => setUsuario(evento.target.value)}
+              />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formBasicPassword">
@@ -26,6 +37,8 @@ export function IniciarSesion() {
               <Form.Control
                 type="password"
                 placeholder="Introduce tu contraseña"
+                value={contraseña}
+                onChange={(evento) => setContraseña(evento.target.value)}
               />
             </Form.Group>
 
