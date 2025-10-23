@@ -3,30 +3,19 @@ import { NavLink } from "react-router-dom";
 import "./App.css";
 import { CarouselFadeExample } from "./Components/Carrusel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Components/CarruselSTYLE.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 function App() {
   return (
     <div>
-      <header>
-        <ul>
-          <li>
-            <Link to="/Home">Home</Link>
-          </li>
-          <li>
-            <Link to="/Productos">Productos</Link>
-          </li>
-          <li>
-            <Link to="/Ofertas">Ofertas</Link>
-          </li>
-          <li>
-            <Link to="/Sobre-nosotros">Sobre nosotros</Link>
-          </li>
-        </ul>
-      </header>
+      <Header></Header>
       <main>
-        <div id="Carrusel">
+        <div id="carrusel" className="border">
           <CarouselFadeExample></CarouselFadeExample>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
