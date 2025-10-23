@@ -18,12 +18,12 @@ export function IniciarSesion() {
 
       <Container className="d-flex justify-content-center align-items-center vh-100">
         <div className="login-container p-5 rounded">
-          <h2 className="text-center tech-one">Iniciar Sesión</h2>
-          <p className="text-center mb-4">Autentícate para continuar</p>
+          <h2 className="login-titulo">Iniciar Sesión</h2>
+          <p className="login-subtitulo">Autentícate para continuar</p>
 
-          <Form onSubmit={handleSubmit}>  
+          <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label> Usuario:</Form.Label>
+              <Form.Label>Usuario:</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Introduce tu usuario"
@@ -33,7 +33,7 @@ export function IniciarSesion() {
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formBasicPassword">
-              <Form.Label> Contraseña:</Form.Label>
+              <Form.Label>Contraseña:</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Introduce tu contraseña"
