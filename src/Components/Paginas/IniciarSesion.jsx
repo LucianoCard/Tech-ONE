@@ -23,10 +23,10 @@ export function IniciarSesion() {
 
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Usuario:</Form.Label>
+              <Form.Label>Email:</Form.Label>
               <Form.Control
-                type="text"
-                placeholder="Introduce tu usuario"
+                type="email"
+                placeholder="Introduce tu email"
                 value={usuario}
                 onChange={(evento) => setUsuario(evento.target.value)}
               />
@@ -43,7 +43,7 @@ export function IniciarSesion() {
             </Form.Group>
 
             <Button variant="primary" type="submit" className="w-100">
-              Acceder
+              [Acceder]
             </Button>
           </Form>
 

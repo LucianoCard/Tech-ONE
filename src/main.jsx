@@ -9,6 +9,7 @@ import { Productos } from "./Components/Paginas/Productos.jsx";
 import { Ofertas } from "./Components/Paginas/Ofertas.jsx";
 import { SobreNosotros } from "./Components/Paginas/SobreNosotros.jsx";
 import { IniciarSesion } from "./Components/Paginas/IniciarSesion.jsx";
+import { CrearCuenta } from "./Components/Paginas/CrearCuenta.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <IniciarSesion />,
+  },
+
+  {
+    path: "/registro",
+    element: <CrearCuenta />,
   },
 ]);
 
