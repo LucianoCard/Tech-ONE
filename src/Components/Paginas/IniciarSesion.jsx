@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function IniciarSesion() {
   const [usuario, setUsuario] = useState("");
@@ -48,14 +49,14 @@ export function IniciarSesion() {
           </Form>
 
           <div className="text-center mt-3">
-            <a href="#" className="small-link">
+            <Link to="/recuperar-contraseña" className="small-link">
               ¿Olvidaste tu contraseña?
-            </a>
+            </Link>
             <p className="mt-2">
-              ¿Eres nuevo?{" "}
-              <a href="#" className="small-link">
-                Crea tu cuenta
-              </a>
+              ¿No tienes cuenta?{" "}
+              <Link to="/registro" className="small-link">
+                ¡Regístrate!
+              </Link>
             </p>
           </div>
         </div>
