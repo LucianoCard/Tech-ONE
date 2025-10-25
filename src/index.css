@@ -1,11 +1,16 @@
-.tech-one {
+.navbar-fuente.active.tech-one {
   color: #000;
   text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
-  font-weight: bold;
 }
 .glow-border {
   border: 2px solid #80cbc4; /* Borde base */
   box-shadow: 0 0 10px #80cbc4, 0 0 20px #80cbc4, 0 0 30px #80cbc4; /* Efecto de brillo */
   border-radius: 4px; /* Opcional, para esquinas suaves */
   background-color: rgba(0, 0, 0, 0.2); /* Opcional, si quieres contraste */
+}
+
+.navbar-fuente {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
